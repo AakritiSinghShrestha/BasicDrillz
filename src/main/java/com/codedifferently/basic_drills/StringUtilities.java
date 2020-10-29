@@ -59,18 +59,17 @@ public class StringUtilities {
      */
     public static Character getMiddleCharacter(String inputValue){
         int position;
-        int length;
         if(inputValue.length() % 2 == 0){
             position = inputValue.length() / 2 - 1;
-            length = 2;
+
         }
         else
         {
             position = inputValue.length() / 2;
-            length = 1;
+
         }
-return null;
-//        return inputValue.substring(position , (position + length));
+
+     return inputValue.charAt(position);
     }
 
     /**
